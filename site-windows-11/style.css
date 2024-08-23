@@ -9,12 +9,12 @@
 }
 
 :root {
-    --cor1: #F50701;
-    --cor2: #CA2522;
-    --cor3: #A03735;
-    --cor4: #753C3B;
-    --cor5: #4B3232;
-    --cor6: #332B2B;
+    --cor1: #1d01f5;
+    --cor2: #3b40a6;
+    --cor3: #0f69b7;
+    --cor4: #211b4b;
+    --cor5: #010127;
+    --cor6: #4bb0e3;
 
     --font-padrao: "Open Sans", cursive;
     --font-destaque: 'american', arial;
@@ -52,7 +52,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor6));
+    background-image: linear-gradient(to bottom, var(--cor6), var(--cor1));
     text-align: center;
     padding: 60px;
 }
@@ -76,19 +76,33 @@ nav {
     padding: 30px;
     font-family: var(--font-padrao);
     text-align: center;
-    background-color: #332B2B;
+    background-color: var(--cor1);
 }
 
 nav a {
     text-decoration: none;
     color: white;
     padding: 25px;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
     border-radius: 50%;
 }
 
 nav a:hover {
-    background-color: #753C3B;
+    background-color: var(--cor1);
     transition-duration: .5s;
+    box-shadow: 10px 10px 10px var(--cor4);
+}
+
+#a1 {
+    padding: 24px 30px;
+    border-radius: 50%;
+}
+
+#a2 {
+    padding: 24px 30px;
+    border-radius: 50%;
 }
 
 main {
