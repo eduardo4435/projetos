@@ -25,7 +25,7 @@ main > article > p > abbr > a::after {
 }
 main > article > p > abbr > a {
     color: #ffffff;
-    background-color: #CA2522;
+    background-color: #2f0cdf;
     text-decoration: none;
 }
 
@@ -126,8 +126,9 @@ main img {
     margin-bottom: 20px;
 }
 
-main p {
+article > p {
     line-height: 2em;
+    padding-top: 20px;
 }
 
 aside {
@@ -152,7 +153,7 @@ aside ul {
 }
 
 video {
-    width: 50%;
+    width: 100%;
     display: block;
     margin: auto;
     margin-top: 50px;
