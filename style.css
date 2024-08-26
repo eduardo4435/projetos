@@ -158,8 +158,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  width: 55%;
-  min-width: 360px;
+  min-width: 400px;
+  max-width: 60%;
   padding: 20px;
   border: 10px solid #cd973c;
   border-radius: 20px;
@@ -288,11 +288,18 @@ button.fechar:hover, .fechar:focus {
   margin-right: 30px;
 }
 
-#exe input {
+/*#exe input {
   margin-right: 35px;
 }
 #segunda_linha input {
   margin-right: 25px;
+}*/
+
+
+#segunda_linha {
+  width: 100%;
 }
 
-
+#txt_sessao p {
+  margin-bottom: 3px;
+}
