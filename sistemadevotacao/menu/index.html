@@ -11,12 +11,12 @@
         <nav>
             <ul id="lista_menu">
                 <li class="menu_materias">
-                    <a class="a_menu" href="#"><img src="img/materias.png" alt=""><BR><p class="opcoes_menu">MATÉRIAS</p></a>
+                    <a class="a_menu" href="#" ><img src="img/materias.png" alt=""><BR><p class="opcoes_menu" >MATÉRIAS</p><div id="mat-seta"></div></a>
 
                     <div class="opcoes_materias">
-                        <a class="a_materia" href="#">MATÉRIAS EM TRAMITAÇÃO</a>
-                        <a class="a_materia" href="#">MATÉRIAS TRAMITADAS</a>
-                        <a class="a_materia" href="#">MATÉRIAS ARQUIVADAS</a>
+                        <a class="a_materia" href="#" id="Mat1">MATÉRIAS EM TRAMITAÇÃO</a>
+                        <a class="a_materia" href="#" id="Mat2">MATÉRIAS TRAMITADAS</a>
+                        <a class="a_materia" href="#" id="Mat3">MATÉRIAS ARQUIVADAS</a>
                     </div>
                 </li>
                 <li>
@@ -56,13 +56,21 @@
 
         function marcar_item(item){
             item.iten.style.border  = "3.5px solid #00d5e9";
+            item.iten.style.background = "#111E48";
         }
 
         function desmarcar_item(item){
             item.iten.style.border  = "";
             item.borda.style.borderBottom  = "";
+            item.iten.style.background = "";
         }
         
+        function marcar_tipo_materia(texto){
+            Menu._myItens[0].borda.innerHTML = texto;
+            //Ao selecionar um item do menu marca novamente a opção materias
+            clicar_opcao(0);
+        }
+
         var Menu = {
 
             //Vetor de itens do menu
@@ -106,6 +114,20 @@
 
         Main();
         
+        marcar_tipo_materia("MATÉRIAS EM TRAMITAÇÃO");
+
+            document.getElementById("Mat1").addEventListener('click', function(e){
+                marcar_tipo_materia("MATÉRIAS EM TRAMITAÇÃO");
+            }, false);
+
+            document.getElementById("Mat2").addEventListener('click', function(e){
+                marcar_tipo_materia("MATÉRIAS TRAMITADAS");
+            }, false);
+
+
+            document.getElementById("Mat3").addEventListener('click', function(e){
+                marcar_tipo_materia("MATÉRIAS ARQUIVADAS");
+            }, false);
 
         
     </script>

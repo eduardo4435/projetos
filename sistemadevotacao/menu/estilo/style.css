@@ -20,10 +20,9 @@
     box-sizing: border-box;
 }
 
-body {
+.menu {
     font-family: var(--fontemenu);
     font-size: 1.45em;
-    height: 1000px;
 }
 
 /*.menu{
@@ -32,7 +31,6 @@ body {
 }*/
 
 #lista_menu { 
-    width: 100%;
     display: flex;
     justify-content: center;
     height: 100%;
@@ -51,12 +49,12 @@ body {
     color: var(--branco);
     background-color: var(--selecionado);
     border-radius: 10px;
-    width: 13vw;
+    width: 16vw;
     cursor: pointer;
     user-select: none;
-
-    height: 24vh;
+    min-width: 160px;
 }
+
 
 .a_menu:hover {
     background-color: var(--selecionado);
@@ -70,16 +68,44 @@ body {
     visibility: hidden;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.388);
     transition: .2s;
+    width: 300px;
 }
 .opcoes_materias a{
     background-color: var(--branco);
 }
+
+.menu_materias {
+    position: relative;
+}
+
 
 .menu_materias:hover .opcoes_materias {
     visibility: visible;
     transform: translateY(15%);
     opacity: 100%;
     
+}
+
+.menu_materias:active .a_menu{
+    transform: scale(0.9);
+    transition: 0s
+}
+
+#mat-seta::after {
+    content: url('../img/seta.ico'); 
+}   
+
+#mat-seta {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    transform: rotate(180deg);
+    transition: .2s;
+}
+
+.menu_materias:hover #mat-seta {
+    transform: rotate(0deg);
+    transform: translate(1px, -7px);
 }
 
 .a_materia {
@@ -90,6 +116,14 @@ body {
     transition: .3s;
     color: var(--azul);
     user-select: none;
+}
+
+
+
+
+#mat-seta url {
+    width: 10px;
+    height: 10px;
 }
 .a_materia:hover {
     background-color: var(--selecionado);
