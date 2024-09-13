@@ -54,7 +54,8 @@ body {
     width: 13vw;
     cursor: pointer;
     user-select: none;
-    
+
+    height: 24vh;
 }
 
 .a_menu:hover {
@@ -68,7 +69,7 @@ body {
     opacity: 0;
     visibility: hidden;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.388);
-    transition: .5s;
+    transition: .2s;
 }
 .opcoes_materias a{
     background-color: var(--branco);
@@ -94,11 +95,12 @@ body {
     background-color: var(--selecionado);
     color: var(--branco);
 }
+
 #lista_menu a img {
     display: flex;
     justify-content: center;
     margin: auto;
-    transition: .3s;
+    transition: .3s;   
 }
 #lista_menu a:hover img{
     transform: translateX(0px) scale(1.2);
