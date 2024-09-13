@@ -54,6 +54,7 @@ body {
     width: 13vw;
     cursor: pointer;
     user-select: none;
+    
 }
 
 .a_menu:hover {
@@ -62,7 +63,7 @@ body {
 }
 .opcoes_materias {
     position: absolute;
-    top: 24%;
+    transform-origin: 0%;
     transform: translateY(-10%);
     opacity: 0;
     visibility: hidden;
