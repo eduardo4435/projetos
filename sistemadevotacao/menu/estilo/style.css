@@ -22,7 +22,7 @@
 
 .menu {
     font-family: var(--fontemenu);
-    font-size: 1.45em;
+    font-size: 1.45vw;
 }
 
 /*.menu{
@@ -33,6 +33,7 @@
 #lista_menu { 
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100%;
     list-style: none;
     padding: 0.5rem 0;
