@@ -33,6 +33,7 @@
 #lista_menu { 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     height: 100%;
     list-style: none;
@@ -53,7 +54,7 @@
     width: 16vw;
     cursor: pointer;
     user-select: none;
-    min-width: 160px;
+    min-width: 100px;
 }
 
 
@@ -120,12 +121,6 @@
 }
 
 
-
-
-#mat-seta url {
-    width: 10px;
-    height: 10px;
-}
 .a_materia:hover {
     background-color: var(--selecionado);
     color: var(--branco);
