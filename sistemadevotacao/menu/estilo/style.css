@@ -22,7 +22,7 @@
 
 .menu {
     font-family: var(--fontemenu);
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 
 /*.menu{
@@ -70,7 +70,7 @@
     visibility: hidden;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.388);
     transition: .2s;
-    width: 300px;
+    width: 250px;
 }
 .opcoes_materias a{
     background-color: var(--branco);
@@ -149,14 +149,14 @@
     border-bottom: 3.5px solid var(--dourado);
 }
 
-  #lista_menu a:active {
+#lista_menu a:active {
     transform: scale(0.9);
     transition: 0s
-  }
+}
 
-  #lista_menu a:active .opcoes_menu{
+#lista_menu a:active .opcoes_menu{
     border-bottom: 3.5px solid var(--azul_claro);
-  }
+}
 
 .a_adicionar {
     font-family: var(--fontemenu);
@@ -164,9 +164,9 @@
     left: 20px;
     cursor: pointer;
     user-select: none;
-    padding: 5px;
+    padding: 10px;
     border: 3px solid var(--dourado);
-    border-radius: 15px;
+    border-radius: 20px;
     color: var(--branco);
     background-color: var(--azul);
     text-decoration: none;
